@@ -1,24 +1,12 @@
+// App.js is the parent component of your React projects. All other components will be rendered through app in some way, either as direct children of App.js, or as children of App.js children components.
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import SmartComponent from './Components/SmartComponent';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SmartComponent />
     </div>
   );
 }
